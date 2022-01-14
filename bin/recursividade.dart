@@ -10,10 +10,11 @@ void main() {
 
 int soma = 0;
 
-void funcaoRecursiva(int valor) {
+int funcaoRecursiva(int valor) {
   soma += valor;
   valor--;
   if (valor >= 0) {
     funcaoRecursiva(valor);
   }
+  return soma;
 }
